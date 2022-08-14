@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM EVENTS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Javascript Dom Events</h1>
+        <p>Events are actions or occurrences that happen in the system you are programming, which the system tells you about so your code can react to them.<a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events">see more</a></p>
+    </header>
+    <main>
+        <section>
+            <h1>Click the button and change background of body</h1>
+           <!-- option 1 -->
+            <button onclick="document.body.style.backgroundColor = 'red'">Bg Red</button>
+           <!-- option 2 -->
+            <button onclick="bgGreen()">Bg Green</button>
+           <!-- option 3 --> 
+            <button id="bg-blue">Bg Blue</button>
+           <!-- option 3 another -->  
+            <button id="bg-blueviolet">Bg Blueviolet</button>
+           <!-- option 4 -->  
+            <button id="bg-yellow">Bg Yellow</button>
+           <!-- option 4 another -->  
+            <button id="bg-yellowgreen">Bg Yellowgreen</button>
+           <!-- option 4 final -->  
+            <button id="bg-pink">Bg Pink</button>
+        </section>
+    </main>
+
+    <script src="js/events.js"></script>
+</body>
+</html>

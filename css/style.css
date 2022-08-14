@@ -1,0 +1,12 @@
+body{
+    width: 85%;
+    margin: auto;
+}
+header{
+    text-align: center;
+}
+header p{
+    width: 50%;
+    margin: auto;
+}
+
