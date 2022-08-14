@@ -103,3 +103,48 @@ document.getElementById('btn-post').addEventListener('click', function(){
     commentBox.value = '';
     
 });
+
+
+//explore more events
+// document.getElementById('btn-more').addEventListener('click', function(){
+//     console.log('Event Triggered');
+// });
+// document.getElementById('btn-more').addEventListener('mouseenter', function(){
+//     console.log('Event Triggered');
+// });
+// document.getElementById('btn-more').addEventListener('mousemove', function(){
+//     console.log('Event Triggered');
+// });
+// document.getElementById('text-field').addEventListener('focus', function(){
+//     console.log('Event Triggered inside the input field');
+// });
+// document.getElementById('text-field').addEventListener('blur', function(){
+//     console.log('Event Triggered inside the input field blur');
+// });
+// document.getElementById('text-field').addEventListener('keydown', function(event){
+//     console.log(event.target.value);
+// });
+// document.getElementById('text-field').addEventListener('keypress', function(event){
+//     console.log(event.target.value);
+// });
+document.getElementById('text-field').addEventListener('keyup', function(event){
+    console.log(event.target.value);
+});
+
+
+/* My secret info delete */
+// delete confirmation
+document.getElementById('delete-confirm').addEventListener('keyup', function(event){
+    const text = event.target.value;
+    const deleteButton = document.getElementById('btn-delete');
+    if(text === 'delete'){
+        deleteButton.removeAttribute('disabled');
+    }
+    else{
+        deleteButton.setAttribute('disabled', true);
+    }
+});
+
+document.getElementById('btn-delete').addEventListener('click', function(){
+    document.getElementById('secret-info').style.display = 'none';
+});
