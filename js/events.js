@@ -58,6 +58,25 @@ document.getElementById('bg-pink').addEventListener('click', function() {
 
 //final DOM event handlers
 
+//option 1
+function handleOnClick(){
+    const handlerStatus = document.getElementById('handler-status');
+    handlerStatus.innerText = 'Handle on click user';
+}
 
+//option 2
+document.getElementById('event-listener').addEventListener('click', function(){
+    const handlerStatus = document.getElementById('handler-status');
+    handlerStatus.innerText = 'Handle event listener user';
+})
 
+//option 2 again for input text update
+document.getElementById('btn-update').addEventListener('click', function(){
+    const inputField = document.getElementById('input-field');
+    const inputText = inputField.value;
+
+    const p = document.getElementById('input-text-display');
+    p.innerText = inputText;
+    inputField.value = '';
+})
 
